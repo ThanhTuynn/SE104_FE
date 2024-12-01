@@ -7,11 +7,12 @@ import {
   FileOutlined,
   TeamOutlined,
   UserOutlined,
-  DollarOutlined,
+  MonitorOutlined,
+  
   LogoutOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/whiteLogo.svg'
 import "./SidebarComponent.css";
 
 const SidebarComponent = () => {
@@ -31,7 +32,7 @@ const SidebarComponent = () => {
             </Link>
             </li>
             <li>
-            <Link to="/list-order-product" className="nav-link">
+            <Link to="/.." className="nav-link">
                 <AppstoreOutlined />
                 <span>Quản lý kho</span>
             </Link>
@@ -39,37 +40,31 @@ const SidebarComponent = () => {
             <li>
             <Link to="/list-order-product" className="nav-link">
                 <FileAddOutlined />
-                <span>Quản lý phiếu bán hàng</span>
+                <span>Quản lý đơn hàng</span>
              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
-                <ShoppingCartOutlined />
-                <span>Quản lý phiếu mua hàng</span>
-              </a>
+            <Link to="/track-order-product" className="nav-link">
+                <MonitorOutlined />
+                <span>Theo dõi đơn hàng</span>
+             </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
-                <FileOutlined />
-                <span>Quản lý phiếu dịch vụ</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
+            <Link to="/list-cusmoter" className="nav-link">
                 <TeamOutlined />
                 <span>Quản lý khách hàng</span>
-              </a>
+            </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
-                <UserOutlined />
+            <Link to="/list-staff" className="nav-link">
+                <TeamOutlined />
                 <span>Quản lý nhân viên</span>
-              </a>
+            </Link>
             </li>
             <li>
               <a href="#" className="nav-link">
-                <DollarOutlined />
-                <span>Quản lý doanh thu</span>
+              <ShoppingCartOutlined />
+                <span>Quản lý cửa hàng</span>
               </a>
             </li>
           </ul>

@@ -12,17 +12,21 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px; 
-    .add-order-button {
-        background-color:#3A5BFF;
-        color:white;
-        border:none;
-        margin-left: 10px;
-    }
     .export-button {
-        background-color: #E2E7FF;
-        color: #3A5BFF;
+        background-color:  #ffe3d0;
+        color: #E87428;
         border: none;
         margin-left: 10px;
+        margin-right: 10px;
+    }
+    .export-button:hover {
+      border-color:white;
+      background-color: #E87428;
+      color:  white;
+    }
+    .delete-all-button.active {
+      color: white;
+      background-color: rgb(173, 4, 4);
     }
   }
 
@@ -33,18 +37,28 @@
     align-items: center;
     margin-top: 20px;
     .filter-toggle-button {
-        background-color:#3A5BFF;
-        border-color: #3A5BFF;
+        background-color: #E87428;
+        border-color:  #E87428;
         color: white;
         margin-left: 10px;
+    }
+    .filter-toggle-button:hover {
+        background-color:  #ffe3d0;
+        color: #E87428;
+        font-weight: bold;
+        border: none;
     }
     .filter-btn {
       margin-right: 10px;
     }
+    .filter-btn:hover {
+      border-color: #E87428;
+      color:  #E87428;
+     }
     .filter-btn.active {
-        background-color: #E2E7FF;
-        border-color: #E2E7FF;
-        color: #3A5BFF;
+        background-color: #ffe3d0;
+        border-color: #ffe3d0;
+        color:  #E87428;
         font-weight: bold;
     }
   }
@@ -69,12 +83,12 @@
 
 .cancel-button {
   background-color: #f0f0f0;
-  color: #091057;
+  color: #E87428;
   border: none;
 }
 
 .create-button {
-  background-color: #091057;
+  background-color: #E87428;
   color: white;
   border: none;
   margin-left: 20px;

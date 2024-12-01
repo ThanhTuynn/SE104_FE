@@ -1,22 +1,28 @@
-import HomePage from '../pages/HomePage/HomePage'
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage'
 import OrderProductPage from '../pages/OrderProductPage/OrderProductPage'
-import TopbarComponent from '../components/TopbarComponent/TopbarComponent'
-
+import ListConsumerPage from '../pages/ListCusmerPage/ListCusmerPage'
+import ListStaffPage from '../pages/ListStaffPage/ListStaffPage'
+import DetailCustomerPage from '../pages/DetailCustomerPage/DetailCustomerPage'
 const routes = [
-    {
-        path:'/',
-        page: HomePage,
-        isShowHeader: true
-    },
     {
         path: 'list-order-product',
         page: OrderProductPage,
         isShowHeader: true
     },
     {
-        path: 'top-bar',
-        page: TopbarComponent,
+        path: 'list-customer',
+        page: ListConsumerPage,
+        isShowHeader: true
+    },
+    {
+        path: 'detail-customer',
+        page: DetailCustomerPage,
+        isShowHeader: true
+    },
+    {
+        path: 'list-staff',
+        page: ListStaffPage,
+        isShowHeader: true
     },
     {
         path: '*',

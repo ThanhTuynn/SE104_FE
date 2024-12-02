@@ -9,7 +9,8 @@ import AddServicePage from '../pages/AddServicePage/AddServicePage';
 import AddProductPage from '../pages/AddProductPage/AddProductPage';
 import AdjustProductPage from '../pages/AdjustProductPage/AdjustProductPage'; // Import AdjustProductPage
 import SignIn from '../pages/SignIn/SignIn';
-import SignUp from '../pages/SignUp/SignUp';   
+import SignUp from '../pages/SignUp/SignUp';  
+import SignUpDetails from '../pages/SignUp/SignUp_next'; // Import SignUpDetails
 const routes = [
     {
         path: '/dang-nhap',
@@ -79,6 +80,10 @@ const routes = [
     {
         path: '*',
         page: NotFoundPage,
+    },
+    {
+        path: 'signup-details',
+        page: SignUpDetails,
     },
 ];
 

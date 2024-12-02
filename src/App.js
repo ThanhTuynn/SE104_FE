@@ -4,6 +4,8 @@ import { AuthProvider } from './contexts/AuthContext';
 import routes from './routes/index';
 import DefaultComponent from './components/DefaultComponent/DefaultComponent';
 import ProtectedRoute from './components/ProtectedRoute';
+import SignUp from './pages/SignUp/SignUp';
+import SignUpDetails from './pages/SignUp/SignUp_next';
 
 function App() {
   return (
@@ -11,6 +13,11 @@ function App() {
       <div>
         <Router>
           <Routes>
+            {/* Add signup routes first */}
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signup-details" element={<SignUpDetails />} />
+            
+            {/* Map through other routes */}
             {routes.map((route) => {
               const Page = route.page;
               const Layout = route.isShowHeader ? DefaultComponent : Fragment;
@@ -35,6 +42,8 @@ function App() {
                 />
               );
             })}
+            
+            {/* Fallback route */}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Router>

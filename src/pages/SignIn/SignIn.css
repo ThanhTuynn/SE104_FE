@@ -109,10 +109,10 @@ body, html {
   width: 100%;
   max-width: 420px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(0, 0, 0, 0.05),
-    inset 0 0 20px rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
   margin-top: 35px; /* Adjust for header height */
 }

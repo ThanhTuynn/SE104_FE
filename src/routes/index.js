@@ -3,6 +3,8 @@ import OrderProductPage from '../pages/OrderProductPage/OrderProductPage'
 import ListConsumerPage from '../pages/ListCusmerPage/ListCusmerPage'
 import ListStaffPage from '../pages/ListStaffPage/ListStaffPage'
 import DetailCustomerPage from '../pages/DetailCustomerPage/DetailCustomerPage'
+import Dashboard from '../pages/DashboardPage/Dashboard'
+import Personal from '../pages/PersonalInfoPage/Personal'
 const routes = [
     {
         path: 'list-order-product',
@@ -22,6 +24,16 @@ const routes = [
     {
         path: 'list-staff',
         page: ListStaffPage,
+        isShowHeader: true
+    },
+    {
+        path: 'dashboard',
+        page: Dashboard,
+        isShowHeader: true
+    },
+    {
+        path: 'personal',
+        page: Personal,
         isShowHeader: true
     },
     {

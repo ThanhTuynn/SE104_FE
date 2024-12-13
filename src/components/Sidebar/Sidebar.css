@@ -15,9 +15,9 @@ body {
     width: 270px;
     position: fixed;
     margin: 16px;
-    background:  #E87428;
+    border-radius: 16px;
+    background: #091057;
     height: calc(100vh - 32px);
-    border-radius: 20px;
 }
 
 .sidebar-header {
@@ -28,19 +28,18 @@ body {
 }
 
 .sidebar-header .header-logo img {
-    width: 280px; 
-    height: 140px;
+    width: 250px; 
+    height: 70px;
     display: block;
-    margin-left: -40px;
-    margin-top: -20px;
-    margin-bottom: -50px;   
+    margin-left: -10px;
+    margin-bottom: -20px;   
 }
 
 .sidebar-header .toggler {
     height: 35px;
     width: 35px;
     border: none;
-    color:#E87428;
+    color: #091057;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,12 +75,12 @@ body {
     text-decoration: none;
     transition: 0.4s ease;
     margin-top: -5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
 .sidebar-nav .nav-link:hover {
-    color:#E87428;
+    color: #091057;
     background: #FFFFFF;
 }
 

@@ -5,7 +5,7 @@ import DetailCustomer from '../pages/DetailCustomer/DetailCustomer'
 import ListEmployeePage from '../pages/ListEmployeePage/ListEmployeePage'
 import DetailEmployee from '../pages/DetailEmployee/DetailEmployee'
 import ImportProduct from '../pages/ImportProductPage/ImportProduct'
-import AddImportProduct from '../pages/AddImportProduct/AddImportProduct'
+import CreateImportProduct from '../pages/CreateImportProduct/CreateImportProduct'
 import DetailImportProduct from '../pages/DetailImportProduct/DetailImportProduct'
 
 const routes = [
@@ -45,8 +45,8 @@ const routes = [
         isShowHeader: true
     },
     {
-        path: 'add-import-product',
-        page: AddImportProduct,
+        path: 'create-import-product',
+        page: CreateImportProduct,
         isShowHeader: true
     },
     {

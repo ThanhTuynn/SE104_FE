@@ -132,14 +132,6 @@ const ImportProduct = () => {
     navigate(`/import-product-detail/${record.id}`);
   };
 
-  const handleAddProduct = () => {
-    // Thêm logic để xử lý thêm phiếu mua hàng (hiện tại chỉ đóng modal)
-    alert("Thêm phiếu mua hàng thành công!");
-    setState((prev) => ({
-      ...prev,
-      isAddModalVisible: false,
-    }));
-  };
 
   const columns = [
     {
@@ -239,7 +231,7 @@ const ImportProduct = () => {
               type="primary"
               icon={<PlusOutlined />}
               className="add-product-button"
-              onClick={() => handleChange("isAddModalVisible", true)}
+              onClick={() => navigate("/create-import-product")} // Điều hướng tới trang tạo phiếu
             >
               Thêm phiếu mua hàng
             </Button>
@@ -310,18 +302,6 @@ const ImportProduct = () => {
           cancelText="Hủy"
         >
           <p>Bạn có chắc chắn muốn xóa những phiếu mua hàng đã chọn?</p>
-        </Modal>
-
-        {/* Add Product Modal */}
-        <Modal
-          title="Thêm sản phẩm"
-          visible={state.isAddModalVisible}
-          onOk={handleAddProduct}
-          onCancel={() => handleChange("isAddModalVisible", false)}
-          okText="Thêm"
-          cancelText="Hủy"
-        >
-          <p>Form thêm sản phẩm sẽ hiển thị tại đây.</p>
         </Modal>
       </div>
     </div>

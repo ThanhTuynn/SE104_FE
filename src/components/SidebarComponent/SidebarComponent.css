@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-}
 
 body {
     min-height: 100vh;
@@ -17,6 +16,7 @@ body {
     margin: 16px;
     background: #091057;
     height: calc(100vh - 32px);
+    border-radius: 20px;
 }
 
 .sidebar-header {
@@ -24,21 +24,20 @@ body {
     padding: 25px 20px;
     align-items: center;
     justify-content: space-between;
-}
 
-.sidebar-header .header-logo img {
-    width: 200px; 
-    height: 80px;
+    .header-logo img {
+    width: 260px; 
+    height: 120px;
     display: block;
     margin-left: -10px;
     margin-bottom: -20px;   
 }
 
-.sidebar-header .toggler {
+.toggler {
     height: 35px;
     width: 35px;
     border: none;
-    color: #091057;
+    color:#091057;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +47,13 @@ body {
     transition: 0.4s ease;
 }
 
-.sidebar-header .toggler:hover {
+.toggler:hover {
     background: #dde4fb;
 }
 
-.sidebar-header .toggler span{
+.toggler span{
     font-size: 1.75rem;
+}
 }
 
 .sidebar-nav .nav-list {
@@ -74,17 +74,20 @@ body {
     text-decoration: none;
     transition: 0.4s ease;
     margin-top: -5px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
-
-.sidebar-nav .nav-link:hover {
+.nav-link.active {
     color: #091057;
-    background: #FFFFFF;
-}
+    background: #ffffff;
+    font-weight: bold;
+  }
+  
 
 .sidebar-nav .secondary-nav {
     position: absolute;
     bottom: 10px;
     width: 100%;
+}
+
 }

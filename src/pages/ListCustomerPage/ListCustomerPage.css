@@ -1,0 +1,65 @@
+.customer-page {
+  margin-left: 270px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .customer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .export-button {
+    background-color: #cdd1ff;
+    color: #091057;
+    border: none;
+    margin-left: 10px;
+  }
+
+  .export-button:hover {
+    border-color: white;
+    background-color: #091057;
+    color: white;
+  }
+
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons button {
+    margin-right: 0px;
+  }
+
+  .filter-buttons button:hover {
+    border-color: #091057;
+    color: #091057;
+  }
+  .filter-buttons button.active {
+    background-color: #cdd1ff;
+    border-color: #cdd1ff;
+    color: #091057;
+    font-weight: bold;
+  }
+
+  .delete-all-button {
+    background-color: rgb(173, 4, 4);
+    color: white;
+    border: none;
+  }
+
+  .delete-all-button:hover {
+    background-color: rgb(200, 50, 50);
+    color: white;
+  }
+}

@@ -1,7 +1,12 @@
 import HomePage from '../pages/HomePage/HomePage'
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage'
-import OrderProductPage from '../pages/OrderProductPage/OrderProductPage'
-import TopbarComponent from '../components/TopbarComponent/TopbarComponent'
+import ListCustomerPage from '../pages/ListCustomerPage/ListCustomerPage'
+import DetailCustomer from '../pages/DetailCustomer/DetailCustomer'
+import ListEmployeePage from '../pages/ListEmployeePage/ListEmployeePage'
+import DetailEmployee from '../pages/DetailEmployee/DetailEmployee'
+import ImportProduct from '../pages/ImportProductPage/ImportProduct'
+import AddImportProduct from '../pages/AddImportProduct/AddImportProduct'
+import DetailImportProduct from '../pages/DetailImportProduct/DetailImportProduct'
 
 const routes = [
     {
@@ -10,18 +15,44 @@ const routes = [
         isShowHeader: true
     },
     {
-        path: 'list-order-product',
-        page: OrderProductPage,
+        path: 'list-customer',
+        page: ListCustomerPage,
         isShowHeader: true
     },
     {
-        path: 'top-bar',
-        page: TopbarComponent,
+        path: 'customer-detail/1',
+        page: DetailCustomer,
+        isShowHeader: true
+    },
+    {
+        path: 'list-employee',
+        page: ListEmployeePage,
+        isShowHeader: true
+    },
+    {
+        path: 'employee-detail/1',
+        page: DetailEmployee,
+        isShowHeader: true
+    },
+    {
+        path: 'list-import-product',
+        page: ImportProduct,
+        isShowHeader: true
+    },
+    {
+        path: 'import-product-detail/1',
+        page: DetailImportProduct,
+        isShowHeader: true
+    },
+    {
+        path: 'add-import-product',
+        page: AddImportProduct,
+        isShowHeader: true
     },
     {
         path: '*',
         page: NotFoundPage,
-    }
+    },
 ]
 
 export default routes;

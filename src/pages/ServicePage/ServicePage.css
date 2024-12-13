@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+/* Main container */
+.order-table-container {
+    background-color: #f9f9f9;
+    margin-left: -30px;
+    overflow-x: auto;
+    z-index: 0; /* Low z-index for container */
+  }
+  
+  /* Table container */
+  .tableer-containers {
+    width: 1140px;
+    margin-left: 310px;
+    position: static;
+    z-index: 0; /* Lowest z-index */}
